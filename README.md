@@ -29,4 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Angular cli CMD
 
 `ng new meeting-report --directory ./`
-`ng generate service hero --module=report`
+`cd ~/workspace/meeting-report/src/app/reports`
+`ng generate service hero --module=reports`
+`ng generate component report-list --module=reports --export=true`
