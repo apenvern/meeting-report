@@ -32,3 +32,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `cd ~/workspace/meeting-report/src/app/reports`
 `ng generate service hero --module=reports`
 `ng generate component report-list --module=reports --export=true`
+`ng generate component report-detail --module=reports --export=true`
+`ng generate module reports-routing --flat --module=reports`
+
+`cd ~/workspace/meeting-report/src/app/reports`
+`ng generate module app-routing --flat --module=app`

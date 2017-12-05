@@ -1,28 +1,30 @@
-<h1>
-  Liste des comptes rendus
-</h1>
-<br>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Nom</th>
-      <th>Sujet</th>
-      <th>Date</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <tr *ngFor="let report of reports">
-        <td>{{report.id}}</td>
-        <td>{{report.name}}</td>
-        <td>{{report.subject}}</td>
-        <td>{{report.date | date: 'dd/MM/yyyy'}}</td>
-        <td>
-          <button type="button" class="btn btn-outline-info">Modifier</button>
-          <button type="button" class="btn btn-outline-danger">Supprimer</button>
-        </td>
+<div class="container">
+  <h1>
+    Liste des comptes rendus
+  </h1>
+  <br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Sujet</th>
+        <th>Date</th>
+        <th>Actions</th>
       </tr>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <tr>
+        <tr *ngFor="let report of reports">
+          <td>{{report.id}}</td>
+          <td>{{report.name}}</td>
+          <td>{{report.subject}}</td>
+          <td>{{report.date | date: 'dd/MM/yyyy'}}</td>
+          <td>
+            <a routerLink="/report/{{report.id}}" class="btn btn-outline-info" role="button">Modifier</a>
+            <button type="button" class="btn btn-outline-danger">Supprimer</button>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
